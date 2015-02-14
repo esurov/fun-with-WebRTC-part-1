@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Simple Photo Booth</title>
+        <link rel="stylesheet" type="text/css" href="1_1_photo_booth.css">
+    </head>
+
+    <body>
+        <h1>Simple Photo Booth</h1>
+        <p>
+            <em><strong>Instructions</strong></em>:
+            <br>
+            Press spacebar or click the capture button to record the picture. Then use right click > save as to save the picture on disk.
+            <br>
+            Easy !
+        </p>
+
+        <!-- The HTML video element, to display the webca stream in real time -->
+        <video id="localVideo" autoplay></video>
+
+        <!-- The canvas on which we will be display the picture -->
+        <canvas id="canvas" width="640" height="480"></canvas>
+
+
+        <!-- The button to capture the picture, spacebar can also be used -->
+        <button id="captureBtn" disabled>capture!</button>
+
+
+        <script src="1_1_photo_booth.js"></script>
+    </body>
+</html>

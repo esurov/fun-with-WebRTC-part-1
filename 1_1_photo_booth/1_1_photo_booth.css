@@ -1,0 +1,23 @@
+body {
+    width: 1300px;
+    margin: auto;
+}
+
+video, canvas {
+    /* So that we can have the video and the image next to each other */
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid black;
+    /* Set the size this time, just for alignment */
+    width: 640px;
+    height: 480px;
+}
+
+button {
+    display: block;
+    width: 1000px;
+    height: 200px;
+    margin: auto;
+    font-size: 4em;
+    text-transform: uppercase;
+}
