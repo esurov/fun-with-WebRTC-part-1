@@ -1,0 +1,26 @@
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+.video_frame {
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+}
+
+video {
+    border: 1px solid black;
+}
+
+#oncall {
+    display: none;
+}
+
+#calling_status {
+    font-size: 1.2em;
+    color: blue;
+}

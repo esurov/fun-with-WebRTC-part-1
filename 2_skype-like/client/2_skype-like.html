@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Signalling Server</title>
+        <link rel="stylesheet" type="text/css" href="2_skype-like.css">
+    </head>
+
+    <body>
+        <!-- This section is visible only during signalling -->
+        <section id="signalling">
+            <h1>Signalling Server</h1>
+            <p>
+                <strong id="nickname"></strong>, you are now <span id="status"><strong class="red">disconnected!</strong></span>
+                <br>
+                <strong id="calling_status"></strong>
+            </p>
+
+            <h2>List of currently connected users</h2>
+            <ul id="userlist">
+            </ul>
+        </section>
+
+        <!-- This section is visible only during a cal -->
+        <section id="oncall">
+            <div class="video_frame">
+                <!-- Be careful to use 'autoplay'! -->
+                <video id="localVideo" autoplay></video>
+                <br>
+                <span>Local Video</span>
+            </div>
+            <div class="video_frame">
+                <!-- Be careful to use 'autoplay'! -->
+                <video id="remoteVideo" autoplay></video>
+                <br>
+                <span>Remote Video</span>
+            </div>
+        </section>
+        <script src="2_skype-like.js"></script>
+    </body>
+</html>
