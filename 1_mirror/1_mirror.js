@@ -1,15 +1,15 @@
 navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia;
 
-// var constraints = {
-//     video: true,
-//     audio: true
-// };
-
 var constraints = {
-    mandatory: {
-        height: {min: 320}
-    }
+    video: true,
+    audio: false
 };
+
+// var constraints = {
+//     mandatory: {
+//         height: {min: 320}
+//     }
+// };
 
 var localVideo = document.getElementById ('localVideo');
 
