@@ -17,7 +17,8 @@ navigator.getUserMedia (constraints, captureOK, captureKO);
 
 function captureOK (stream) {
     console.log ('capture was ok');
-    localVideo.src = window.URL.createObjectURL (stream);
+    //localVideo.src = window.URL.createObjectURL (stream);
+    localVideo.srcObject = stream;
     var track = stream.getVideoTracks();
     console.log ('width: ' + track[0].height);
 }
