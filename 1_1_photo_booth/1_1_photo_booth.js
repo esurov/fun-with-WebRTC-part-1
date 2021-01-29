@@ -22,7 +22,8 @@ function captureOK (stream) {
     console.log ('capture was ok');
 
     // Attach the stream
-    localVideo.src = window.URL.createObjectURL (stream);
+    //localVideo.src = window.URL.createObjectURL (stream);
+    localVideo.srcObject = stream;
 
     // Register an event on the enter key
     document.addEventListener("keyup", function(evt) {
